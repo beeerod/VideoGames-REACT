@@ -1,0 +1,325 @@
+#content-area {
+  overflow: auto;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+
+#filter {
+  background: $flash_white;
+  width: 30%;
+  max-width: 300px;
+  display: inline-block;
+  float: left;
+
+  .inside {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  h4 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  select {
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .filters {
+    .title {
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 1rem;
+      color: $gun_metal;
+    }
+
+    input[type="text"] {
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: 0.2rem;
+      width: 45%;
+      display: inline-block;
+      margin-right: 2.5%;
+      margin-bottom: 1rem;
+    }
+
+    &.extras {
+      label {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+
+        input[type="checkbox"] {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
+
+#listings {
+  width: 70%;
+  float: left;
+  display: inline-block;
+  padding: 15px;
+
+  .search-area {
+    input[type="text"] {
+      width: 70%;
+      background: transparent;
+      font-size: 2rem;
+      border: none;
+      border-bottom: 2px solid $gray_blue;
+      margin-bottom: 20px;
+      font-weight: 100;
+      color: $gray_blue;
+    }
+  }
+
+  .sortby-area {
+    margin-bottom: 20px;
+
+    .results {
+      font-size: 0.8rem;
+      color: $gray_blue;
+      display: inline-block;
+    }
+    .sort-options {
+      float: right;
+
+      select {
+        font-size: 0.9rem;
+        font-weight: 300;
+        border: 1px solid $gray_blue;
+        background: transparent;
+        padding: 20px;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+      }
+    .view {
+      display: inline-block;
+
+    }
+
+    }
+  }
+
+  .listings-results {
+    margin-bottom:60px;
+    .listing {
+      padding: 0 10px;
+      border-radius: 5px;
+      background: white;
+      -webkit-box-shadow: 0px 9px 54px -4px rgba(237,237,237,1);
+      -moz-box-shadow: 0px 9px 54px -4px rgba(237,237,237,1);
+      box-shadow: 0px 9px 54px -4px rgba(237,237,237,1);
+      background-size: contain;
+
+    }
+
+    .listing-img {
+      color: white;
+      padding: 15px;
+      position: relative;
+      background: url(https://images-na.ssl-images-amazon.com/images/I/91M9TLtuEJL._SY445_.jpg)
+      no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      min-height: 300px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      transition: all 0.4s ease-in-out;
+      max-width: 250px;
+
+
+      &:hover {
+        .details {
+          opacity: 1;
+        }
+        .title {
+          opacity: 0;
+        }
+
+      }
+
+      .title {
+        position: absolute;
+        bottom: 20px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 0 1px 4px rgba(91, 91, 91, 1);
+      }
+
+      .details {
+      transition: all 0.4s ease-in-out;
+      opacity: 0;
+      padding: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04f700+1,5bff92+100 */
+      background: rgb(4,247,0); /* Old browsers */
+      background: -webkit-linear-gradient(rgba(4,247,0,.8) 1%, rgba(91,255,146,.8) 100%);
+      background: -o-linear-gradient(rgba(4,247,0,.8) 1%, rgba(91,255,146,.8) 100%);
+      background: linear-gradient(rgba(4,247,0,.8) 1%, rgba(91,255,146,.8) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04f700', endColorstr='#5bff92',GradientType=0 ); /* IE6-9 */
+
+      .logo-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: inline-block;
+        background: url(https://images-na.ssl-images-amazon.com/images/I/91M9TLtuEJL._SY445_.jpg)
+        no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .game-details {
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 20px;
+
+        .game-name {
+          display: block;
+          color: rgba(255, 255, 255, .8);
+          font-size: 1.2rem;
+          font-weight: 300;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .game-date {
+          font-size: 1.2rem;
+          display: block;
+          color: rgba(255, 255, 255, .8)
+        }
+      }
+
+      .listing-details {
+        margin-top: 20px;
+        font-size: 1.3rem;
+        margin-left: 20px;
+
+        .listing-system {
+            display: block;
+            vertical-align: top;
+            margin-top: 15px;
+        }
+
+        .listing-rating {
+          display: block;
+          vertical-align: top;
+          margin-top: 15px;
+        }
+      }
+
+      }
+    }
+  }
+}
+
+.view-btn {
+  background: $gun_metal;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 150px;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background: $vivid_crimson;
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+  .page-nums {
+    margin-top: 30px;
+    display: inline-block;
+    background: white;
+    -webkit-box-shadow: 0px 9px 54px -4px rgba(237,237,237,1);
+    -moz-box-shadow: 0px 9px 54px -4px rgba(237,237,237,1);
+    box-shadow: 0px 9px 54px -4px rgba(237,237,237,1);
+    li {
+      padding: 20px 30px;
+      display: inline-block;
+
+    &.active,
+    &:hover {
+      color: white;
+      font-weight: 700;
+      background: $red_pantone;
+      cursor: pointer;
+    }
+    }
+  }
+}
+
+.col-3 {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-9 {
+  width: 70%;
+  display: inline-block;
+}
+
+.bottom-info {
+  padding: 20px 15px;
+  .bottom-price {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+    color: $red_pantone;
+  }
+  .bottom-location {
+    font-size: 1.3rem;
+    display: block;
+    color: $gray_blue;
+  }
+}
+
+.fas {
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.filters {
+  margin-top: 10px;
+}
